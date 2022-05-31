@@ -198,7 +198,7 @@ td,th{
     
 }
 
-.map p {
+.map p{
     margin: 0 0 2em;
     text-align: center;
 }
@@ -207,8 +207,28 @@ td,th{
     padding: 3em 0;
 }
 
-.imgenDiferenciales{
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 2;
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
     width: 60%;
+    border-radius: 10px;
 }
 
 .video{
