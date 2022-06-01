@@ -101,8 +101,7 @@ footer{
 }
 
 main{
-    width: 940px;
-    margin: 0 auto;
+  
 }
 
 form{
@@ -165,6 +164,13 @@ td,th{
 
 /*Aqui iniciaCSS para home*/
 
+.principal{
+    background: #fefefe;
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
 .banner{
     width: 100%;
 }
@@ -175,6 +181,24 @@ td,th{
     margin: 0 0 1em;
     clear: left;
 }
+
+.titulo-principal:first-letter{
+    font-weight: bold;
+}
+
+.titulo-principal:before{
+    content: "{"
+}
+
+.titulo-principal::after{
+    content: "}"
+}
+
+p:first-line{
+    font-style: italic;   
+}
+
+
 
 .principal p{
     margin: 0 0 2em;
@@ -187,6 +211,8 @@ td,th{
 
 .principal em{
     font-style: italic;
+      width: 940px;
+    margin: 0 auto;
 }
 
 
@@ -203,8 +229,23 @@ td,th{
     text-align: center;
 }
 
+.mapacontenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
 .map{
+    
     padding: 3em 0;
+    background: linear-gradient(white,#888888);
+    /*background: linear-gradient(45deg,orange,blue);*/
+
+    
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
 }
 
 .contenido-diferenciales{
@@ -222,16 +263,41 @@ td,th{
     line-height: 2;
 }
 
+.items::before{
+    content: "★ ";
+}
+
 .items:first-child{
     font-weight: bold;
 }
 
 .imagen-diferenciales{
+    box-shadow: 1px 5px 10px;
     width: 60%;
     border-radius: 10px;
+    transition: 300ms;
+
+}
+
+.imagen-diferenciales:hover{
+    
+    opacity: 75%;
+    
 }
 
 .video{
+    box-shadow: 1px 5px 10px;
     width:  894px;
     margin: 1em auto;
+    transition: 300ms;
 }
+.video:hover{
+    
+    transform: scale(1.02);
+}
+
+@media screen and (max-width:480px){
+    body {background: red;}
+    
+}
+
